@@ -10,5 +10,5 @@
 
 | Ceaser cipher | Affine cipher | RSA algorithm | Multiplcative Inverse |
 |---------------|---------------|---------------|-----------------------|
-|<img src="/assets/ss1.png" title="Mockup for Ceaser cipher encryption feature." width="180" style="text-align:center; ">|<img src="/assets/ss2.png" title="Mockup for Ceaser cipher encryption feature." width="180">|<img src="/assets/ss3.png" title="Mockup for Ceaser cipher encryption feature." width="180">|<img src="/assets/ss4.png" title="Mockup for Ceaser cipher encryption feature." width="180" style="text-align:center; ">|
+|<img src="/assets/ss01.png" title="Mockup for Ceaser cipher encryption feature." width="180" style="text-align:center; ">|<img src="/assets/ss2.png" title="Mockup for Ceaser cipher encryption feature." width="180">|<img src="/assets/ss3.png" title="Mockup for Ceaser cipher encryption feature." width="180">|<img src="/assets/ss4.png" title="Mockup for Ceaser cipher encryption feature." width="180" style="text-align:center; ">|
 
