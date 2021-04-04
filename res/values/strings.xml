@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ciphers Arena</string>
+    <string name="ceasarKeyhint">Enter key:</string>
+    <string name="plaintexthint">Enter plain text:</string>
+    <string name="affinekeyAhint">Enter a:</string>
+    <string name="affinekeyBhint">Enter b:</string>
+
+</resources>

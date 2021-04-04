@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/mainbg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ceasarimg"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/ceasarhead"
+        android:layout_marginTop="-12dp"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/affineimg"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/affinehead"
+        android:layout_marginTop="-24dp"
+        android:alpha="0"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/rsaimg"
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:src="@drawable/rsahead"
+        android:layout_marginTop="-38dp"
+        android:alpha="0"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/migimg"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mighead"
+        android:layout_marginTop="-66dp"
+        android:alpha="0"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/ceasarkey"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/editbg2"
+        android:hint="@string/ceasarKeyhint"
+        android:inputType="number"
+        android:textColor="@android:color/background_light"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="3dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/affinekeyRow"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+    <EditText
+        android:id="@+id/affinekeyA"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editbg2"
+        android:hint="@string/affinekeyAhint"
+        android:inputType="numberSigned"
+        android:textColor="@android:color/background_light"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="3dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_marginEnd="15dp"/>
+
+    <EditText
+        android:id="@+id/affinekeyB"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editbg2"
+        android:hint="@string/affinekeyBhint"
+        android:inputType="number"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="3dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/plaintext"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="3dp"
+        android:inputType="text"
+        android:background="@drawable/editbg2"
+        android:textColor="@android:color/background_light"
+        android:hint="@string/plaintexthint"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/resultbtnbg"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mainbtnbg2"
+        />
+
+    <Button
+        android:id="@+id/resultbtn"
+        android:layout_width="148dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="-47dp"
+        android:layout_marginStart="-33.5dp"
+        android:background="@drawable/mainbtn2"
+        android:textAlignment="center"
+        android:text="ENCRYPT"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/resulttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+        android:id="@+id/ceasarcatetext"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="Ceasar"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:paddingTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+        />
+
+        <TextView
+            android:id="@+id/affinecatetext"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="Affine"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="18sp"
+            android:paddingTop="7dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:id="@+id/rsacatetext"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="RSA"
+            android:textSize="18sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:layout_marginEnd="20dp"
+            android:paddingTop="7dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/migcatetext"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="M I G"
+            android:textSize="18sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:paddingTop="7dp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/catebgimg"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@drawable/catebg"
+        android:layout_marginTop="-50dp"
+        android:layout_marginStart="-120dp"
+        android:translationZ="-1dp"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
